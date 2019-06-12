@@ -29,7 +29,7 @@ public class Execucao {
 			}
 			for(int i2 =0; i2 < dis; i2++) {
 				int cont = i2 +1;
-				JOptionPane.showMessageDialog(null,"Disciplina " + cont + ": " +disciplinas[i2]);
+				JOptionPane.showMessageDialog(null,"Disciplina " + cont + ": " +professor.getDisciplinas()[i2]);
 			}
 			professor.setDisciplinas(disciplinas);
 		} catch(Exception e) {
@@ -44,7 +44,7 @@ public class Execucao {
 			}
 			for(int i3 =0; i3 < cur; i3++) {
 				int cont2 = i3 +1;
-				JOptionPane.showMessageDialog(null,"Curso " + cont2 + ": " + cursos[i3]);
+				JOptionPane.showMessageDialog(null,"Curso " + cont2 + ": " + professor.getCursos()[i3]);
 			}
 			professor.setCursos(cursos);
 		} catch(Exception e) {
